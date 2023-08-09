@@ -416,7 +416,6 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap {
   border: 2px solid #f8f0ca;
   background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
   width: 100%;
   float: left;
   -webkit-border-radius: 4px;
@@ -1881,12 +1880,40 @@ form label {
 
 .fh5co-bg {
 
-  background-image:url('../images/img_bg_3.jpg');
+  background-image:url('../images/img_bg_3_mobile.jpg');
 }
+/* For devices 400px and larger: */
+@media only screen and (min-device-width: 1024px) {
+  .fh5co-bg {
+      background-image: url('../images/img_bg_3.jpg');
+    }
+  } 
+  
+  @media only screen and (min-device-width: 500px) and (max-device-width: 1024px){
+    .fh5co-bg{
+  
+      background-image: url('../images/img_bg_3_ipad.jpg');
+  
+    }
+  }
+  #fh5co-services {
 
-#fh5co-services {
-  background-image: url('../images/img_bg_4.jpg');
-}
+    background-image:url('../images/img_bg_4_mobile.jpg');
+  }
+  /* For devices 400px and larger: */
+  @media only screen and (min-device-width: 1024px) {
+    #fh5co-services {
+        background-image: url('../images/img_bg_4.jpg');
+      }
+    } 
+    
+    @media only screen and (min-device-width: 500px) and (max-device-width: 1024px){
+      #fh5co-services{
+    
+        background-image: url('../images/img_bg_4_ipad.jpg');
+    
+      }
+    }
 
 .dateFont {
 
