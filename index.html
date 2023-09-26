@@ -73,7 +73,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
+					<div id="fh5co-logo"><a href="index.html"><strong></strong></a></div>
 				</div>
 
 			</div>
@@ -89,7 +89,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Grace &amp; Jacky</h1>
+							<h1 id="GJ" style="font-size:60px">Grace &amp; Jacky</h1>
 							<h1>September 30th</h1>
 							<div class="simply-countdown simply-countdown-one"></div>
 						</div>
@@ -245,6 +245,13 @@
 		hours: d.getHours(),
         enableUtc: false
     });
+
+	$( document ).ready(function() {
+		if(new Date() > new Date("2023-09-30 16:00:00")){
+		$(".simply-countdown").hide();
+		$("<h1>Welcome</h1> <h2> to the Wedding of</h2>").insertBefore("#GJ");
+		}
+});
 </script>
 
 	</body>

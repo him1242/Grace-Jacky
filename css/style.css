@@ -839,6 +839,8 @@ form label {
 .fh5co-cover .display-tc {
   display: table-cell !important;
   vertical-align: middle;
+  padding-bottom:100px;
+  
 }
 #fh5co-header .display-tc h1, #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h1,
@@ -874,9 +876,11 @@ form label {
 #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
 .fh5co-cover .display-tc h2 {
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.5;
   margin-bottom: 30px;
+  font-family: "Sacramento", Arial, serif;
+
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h2,
